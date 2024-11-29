@@ -1,10 +1,11 @@
 'use client'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
-import React from 'react'
+import React  from 'react'
 import '../app/globals.css'
 
 const Navbar = () => {
+  
   const searchParams=  useSearchParams();
   const todosFilter=searchParams.get('todos')
 
